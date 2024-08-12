@@ -1,0 +1,8 @@
+<launch>
+    <!-- Launch the TurtleBot3 in Gazebo simulation -->
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_empty_world.launch"/>
+
+    <!-- Your custom node for obstacle avoidance -->
+    <node pkg="topics_project" type="topics_project_node" name="topics_project_node" output="screen"/>
+
+</launch>
